@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginTop="5dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="4dp">
+
+    <RelativeLayout
+        android:layout_width="387dp"
+        android:layout_height="277dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/usuario"/>
+
+        <TextView
+            android:id="@+id/item_title"
+            android:textFontWeight="@integer/material_motion_duration_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_image"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="-380dp"
+            android:layout_marginTop="-273dp"
+            android:layout_toRightOf="@+id/item_image"
+            android:text="Modelo"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="-381dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="190dp"
+            android:layout_toRightOf="@+id/item_image"
+            android:text="Detalles"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="-381dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="190dp"
+            android:layout_toEndOf="@+id/item_detail"
+            android:text="combustion_type"
+            android:textColor="@color/white" />
+
+
+        <ImageButton
+            android:id="@+id/ver_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="299dp"
+            android:layout_marginTop="207dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ver2"
+            android:background="#5B2F2F30"
+            android:onClick="detalleVehiculo"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
