@@ -67,7 +67,7 @@
 
 
         <ImageButton
-            android:id="@+id/ver_detalle"
+            android:id="@+id/btn_ver_detalle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -79,8 +79,7 @@
             android:layout_marginEnd="39dp"
             android:layout_marginBottom="25dp"
             android:src="@drawable/ver2"
-            android:background="#5B2F2F30"
-            android:onClick="detalleVehiculo"/>
+            android:background="#5B2F2F30"/>
 
     </RelativeLayout>
 

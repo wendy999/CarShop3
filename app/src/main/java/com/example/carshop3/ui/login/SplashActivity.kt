@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.carshop3.R
+import com.example.carshop3.ui.login.view.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
     private val tiempo:Long = 3000

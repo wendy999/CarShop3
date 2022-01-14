@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@color/white">
+
+<TextView
+    android:id="@+id/textView19"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:text="@string/alerta_signo_admiraci_n"
+    style="@style/SecondTittle"
+    android:gravity="left"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/CSL_textview_description"
+    style="@style/Text"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:text="@string/esta_seguro_de_cerrar_la_sesi_n"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+<Button
+    android:id="@+id/CSL_textview_accept"
+    style="@style/DialogButtonMain"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    android:text="@string/si"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/CSL_textview_description" />
+
+<Button
+    android:id="@+id/CSL_textview_cancel"
+    style="@style/DialogButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    android:text="@string/no"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/CSL_textview_accept"
+    app:layout_constraintTop_toTopOf="@+id/CSL_textview_accept" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

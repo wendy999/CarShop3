@@ -6,6 +6,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="contraseña">Contraseña</string>
     <string name="iniciar_sesion">Iniciar</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
     <string name="cedula">Cedula</string>
     <string name="vehiculos_disponibles">Disponibles</string>
     <string name="Mis_vehiculos">Adquiridos</string>
@@ -13,4 +14,9 @@
     <string name="title_disponibles">Vehiculos disponibles</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loremipsum">Lorem Ipsum: Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\" \"No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.</string>
+    <string name="alerta_signo_admiraci_n">Alerta!</string>
+    <string name="esta_seguro_de_cerrar_la_sesi_n">¿Esta seguro de cerrar la sesión?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
 </resources>

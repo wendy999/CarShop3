@@ -7,15 +7,17 @@ data class VehiclesList(@SerializedName("vehicles") val vehiculo: ArrayList<Vehi
 
 data class VehiculoModel(
     @SerializedName("brand") var marca:String,
-    @SerializedName("model") var modelo:Int,
+    @SerializedName("model") var modelo:String,
     //@SerializedName("delet_requesth") var delet_requesth:Boolean,
-    //@SerializedName("state") var estatus:String,
-    //@SerializedName("favorite") var favorito:Boolean,
+    @SerializedName("state") var estatus:String,
+    @SerializedName("favorite") var favorito:Boolean,
     @SerializedName("image") var imagen:String,
     //@SerializedName("location") var localizacion:Location ,
-    //@SerializedName("collection_name") var coleccion:String,
-    //@SerializedName("combustion_type") var combustion:String
+    @SerializedName("collection_name") var coleccion:String,
+    @SerializedName("combustion_type") var combustion:String
     ){
+
+
 }
 
 data class Location(
