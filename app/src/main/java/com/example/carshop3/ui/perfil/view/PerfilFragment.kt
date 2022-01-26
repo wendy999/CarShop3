@@ -1,24 +1,20 @@
-package com.example.carshop3.ui.perfil
+package com.example.carshop3.ui.perfil.view
 
 import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.annotation.Nullable
 import com.afollestad.materialdialogs.MaterialDialog
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
 import com.example.carshop3.BuildConfig
 import com.example.carshop3.R
 import com.example.carshop3.databinding.FragmentPerfilBinding
 import com.example.carshop3.ui.PrincipalActivity
+import com.example.carshop3.ui.perfil.viewmodel.NotificationsViewModel
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
-import kotlin.system.exitProcess
 
 class PerfilFragment : Fragment() {
 

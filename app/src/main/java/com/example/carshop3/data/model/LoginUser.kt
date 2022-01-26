@@ -1,8 +1,15 @@
 package com.example.carshop3.data.model
 
-class LoginUser (private var cedula:Int, private var contrasena:String) {
+import com.google.gson.annotations.SerializedName
 
-    private fun getCedula():Int{ return this.cedula }
-    private fun getContrasena():String{ return this.contrasena }
+class LoginUser (@SerializedName("user") var usuario: ArrayList<User>) {
+
+}
+
+data class User(
+    @SerializedName("nombre") var nombre:String,
+    @SerializedName("direccion") var direccion:String,
+    @SerializedName("cedula") var cedula:String,
+    @SerializedName("clave") var clave: String){
 
 }

@@ -53,8 +53,8 @@ class DetailFragment() : Fragment() {
             favorito = it.getBoolean("favorito")
             estado = it.getString("estado")
         }
-
     }
+
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?
@@ -89,12 +89,12 @@ class DetailFragment() : Fragment() {
         detalleCombustion.text = combustion
 
         viewModel.estadoDetail.value = estado
-
         viewModel.estadoDetail.observe(viewLifecycleOwner, Observer {
             binding.itemEstado.text = it
             if (it == "cOMpRaDO"){
                 binding.btnObtener.text = "Eliminar"
                 binding.btnObtener.setOnClickListener {
+
                 }
             }
             if(it == "Desactivado"){
@@ -127,7 +127,7 @@ class DetailFragment() : Fragment() {
             })
         }
 
-        viewModel.FabDetail.value =favorito
+        viewModel.FabDetail.value = favorito
         val fab: View = binding.fab
 
         viewModel.FabDetail.observe(viewLifecycleOwner, Observer {

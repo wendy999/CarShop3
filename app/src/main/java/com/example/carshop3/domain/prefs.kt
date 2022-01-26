@@ -8,6 +8,8 @@ class Prefs(val context: Context) {
     val SHARED_USER_NAME = "username"
     val FAVORITE = "favorito"
     val PASSWORD = "password"
+    val NOMBRE = "nombre"
+    val RECIDENCIA = "recidencia"
 
     val storage = context.getSharedPreferences(SHARED_NAME,0)
 
@@ -19,6 +21,13 @@ class Prefs(val context: Context) {
         storage.edit().putString(PASSWORD,clave).apply()
     }
 
+    fun saveNombre(nombre:String){
+        storage.edit().putString(NOMBRE,nombre).apply()
+    }
+
+    fun saveRecidencia(recidencia:String) {
+        storage.edit().putString(RECIDENCIA,recidencia).apply()
+    }
     fun getPass():String{
         return storage.getString(PASSWORD,"")!!
     }
@@ -33,5 +42,13 @@ class Prefs(val context: Context) {
 
     fun getfav():Boolean{
         return storage.getBoolean(FAVORITE,false)!!
+    }
+
+    fun getNombre():String{
+        return storage.getString(NOMBRE,"")!!
+    }
+
+    fun getReferencia():String{
+        return storage.getString(RECIDENCIA,"")!!
     }
 }

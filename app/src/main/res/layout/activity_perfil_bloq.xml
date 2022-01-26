@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.perfil.PerfilBloqActivity">
+    tools:context=".ui.perfil.view.PerfilBloqActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -65,7 +65,7 @@
                 android:textSize="@dimen/letra" />
 
             <EditText
-                android:id="@+id/contraseña"
+                android:id="@+id/clave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
